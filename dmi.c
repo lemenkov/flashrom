@@ -29,8 +29,6 @@
 #include "flash.h"
 #include "programmer.h"
 
-#if defined(__i386__) || defined(__x86_64__)
-
 /* Enable SMBIOS decoding. Currently legacy DMI decoding is enough. */
 #define SM_SUPPORT 0
 
@@ -464,5 +462,3 @@ int dmi_match(const char *pattern)
 
 	return 0;
 }
-
-#endif // defined(__i386__) || defined(__x86_64__)
